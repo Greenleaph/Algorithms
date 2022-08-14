@@ -28,6 +28,15 @@ public class Main {
         long elapsedTime = (end - begin) / 1000;
         System.out.println("Data equal to Orig: " + Arrays.equals(data, orig));
         System.out.println("Elapsed Time: " + elapsedTime + "s");
+
+        /** Linked List **/
+        SinglyLinkedList list = new SinglyLinkedList();
+
+        list.addFirst("Jesus");
+        list.addLast("Jessica");
+        System.out.println("Size of list: " + list.size());
+        System.out.print("Empty: " + list.isEmpty() + "\n");
+        list.display();
     }
     public static void printIntegerList(int[] list) {
         for (int j : list) {

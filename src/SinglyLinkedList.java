@@ -51,4 +51,17 @@ public class SinglyLinkedList<E> {
             tail = null;                            // special case as list is now empty
         return answer;
     }
+    public void display() {
+        Node current = head;
+        if(head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+        System.out.println("Nodes of singly linked list: ");
+        while(current != null) {
+            // prints each node by incrementing pointer
+            System.out.print(current.element + " ");
+            current = current.next;
+        }
+    }
 }
